@@ -11,6 +11,13 @@ body
     margin: 0px
     padding: 0px
     
+.background
+        display: flex
+        flex-direction: column
+        gap: 25px
+        position: absolute
+        opacity: 0.3
+
 header
     background-color: $base-color
     color: #FFFFFF
@@ -29,28 +36,31 @@ header
         justify-content: center
         gap: 3rem
 
-    .background
-        display: flex
-        flex-direction: column
-        gap: 20px
-        position: absolute
+    
     .home
         color: $sub-color
         border-bottom: 0.15rem solid $sub-color
     
-    .intro
+    .mediumtext
         display: flex
+        flex-direction: row
+    .intro
+        flex: 1
+    .headerRight
+        flex: 1
+        height: 500px
+        padding-top: 40px
         
-
     .intro1 
         font-size: 1.5rem
-        padding-top: 152px
+        padding-top: 80px
+        font-weight: 400
     
     .intro2
         font-size: 4rem
         padding-top: 28px
         padding-bottom: 22px
-        
+        font-weight: 300
         b
             color: $sub-color
     .intro3
@@ -63,15 +73,19 @@ header
         b
             color: $sub-color
     .intro4
-        padding: 18px
-        border: 3px solid $sub-color 
-        display: inline-block
+        display: flex
+        gap: 10px
+        padding: 12px 18px
+        border: 3px solid $primary-color 
+        width: fit-content
         font-style: normal
         line-height: normal
         font-weight: 700
-        color: $sub-color
+        font-size: 1.5rem
+        color: $primary-color
+        background: #101112
         .introsvg
-            width: 20px
-            height: 20px
+            width: 28px
+            height: 28px
             
 

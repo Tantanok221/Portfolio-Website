@@ -10,6 +10,14 @@ body {
   padding: 0px;
 }
 
+.background {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: absolute;
+  opacity: 0.3;
+}
+
 header {
   background-color: #212224;
   color: #FFFFFF;
@@ -26,27 +34,32 @@ header .topheader {
   justify-content: center;
   gap: 3rem;
 }
-header .background {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  position: absolute;
-}
 header .home {
   color: #FFCE82;
   border-bottom: 0.15rem solid #FFCE82;
 }
-header .intro {
+header .mediumtext {
   display: flex;
+  flex-direction: row;
+}
+header .intro {
+  flex: 1;
+}
+header .headerRight {
+  flex: 1;
+  height: 500px;
+  padding-top: 40px;
 }
 header .intro1 {
   font-size: 1.5rem;
-  padding-top: 152px;
+  padding-top: 80px;
+  font-weight: 400;
 }
 header .intro2 {
   font-size: 4rem;
   padding-top: 28px;
   padding-bottom: 22px;
+  font-weight: 300;
 }
 header .intro2 b {
   color: #FFCE82;
@@ -63,15 +76,20 @@ header .intro3 b {
   color: #FFCE82;
 }
 header .intro4 {
-  padding: 18px;
-  border: 3px solid #FFCE82;
-  display: inline-block;
+  display: flex;
+  gap: 10px;
+  padding: 12px 18px;
+  border: 3px solid #ffc263;
+  width: -moz-fit-content;
+  width: fit-content;
   font-style: normal;
   line-height: normal;
   font-weight: 700;
-  color: #FFCE82;
+  font-size: 1.5rem;
+  color: #ffc263;
+  background: #101112;
 }
 header .intro4 .introsvg {
-  width: 20px;
-  height: 20px;
+  width: 28px;
+  height: 28px;
 }/*# sourceMappingURL=portfolio.css.map */
