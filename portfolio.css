@@ -32,11 +32,15 @@ header .home {
 }
 header .intro1 {
   font-size: 1.5rem;
+  padding-top: 152px;
 }
 header .intro2 {
   font-size: 4rem;
   padding-top: 28px;
   padding-bottom: 22px;
+}
+header .intro2 b {
+  color: #FFCE82;
 }
 header .intro3 {
   font-size: 1.5rem;
