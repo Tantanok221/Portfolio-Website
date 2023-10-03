@@ -1,0 +1,22 @@
+html {
+  font-size: 16px;
+  font-family: Karla;
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  background-color: #212224;
+  color: #FFFFFF;
+}
+header .topheader {
+  font-family: Noto Sans;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+header .home {
+  color: #FFCE82;
+  border-bottom: 0.15rem solid #FFCE82;
+}/*# sourceMappingURL=portfolio.css.map */
