@@ -26,9 +26,18 @@ header .topheader {
   justify-content: center;
   gap: 3rem;
 }
+header .background {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+}
 header .home {
   color: #FFCE82;
   border-bottom: 0.15rem solid #FFCE82;
+}
+header .intro {
+  display: flex;
 }
 header .intro1 {
   font-size: 1.5rem;
