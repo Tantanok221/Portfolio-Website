@@ -5,9 +5,13 @@ html {
   margin: 0px;
 }
 
-body {
+body, h1, footer, p {
   margin: 0px;
   padding: 0px;
+}
+
+b {
+  color: #FFCE82;
 }
 
 .background {
@@ -89,6 +93,7 @@ header .intro4 {
   font-size: 1.5rem;
   color: #ffc263;
   background: #101112;
+  border-radius: 4px;
 }
 header .intro4 .introsvg {
   width: 28px;
@@ -239,7 +244,7 @@ header .intro4 .introsvg {
 .casePage {
   height: 443px;
   background-color: #101112;
-  color: #F7C154;
+  color: #FFCE82;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -250,9 +255,115 @@ header .intro4 .introsvg {
   font-size: 2.25rem;
   padding: 24px;
   border-radius: 4px;
-  border: 3px solid #F7C154;
+  border: 3px solid #FFCE82;
   background: #101112;
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 150px;
+  font-family: Karla;
+  font-weight: 700;
+}
+
+footer {
+  color: #ffffff;
+  background-color: #212224;
+  padding-top: 68px;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  gap: 173px;
+}
+footer h1 {
+  font-size: 3rem;
+  font-family: Noto sans;
+  font-weight: 700;
+  line-height: normal;
+}
+footer ::-moz-placeholder {
+  color: #8E8E8E;
+  font-family: Karla;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .caption, footer ::placeholder {
+  color: #8E8E8E;
+  font-family: Karla;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer ::-moz-placeholder {
+  padding-left: 16px;
+}
+footer ::placeholder {
+  padding-left: 16px;
+}
+footer .caption2 {
+  padding-bottom: 18px;
+}
+footer .smallbox {
+  padding-top: 32px;
+}
+footer .leftbox p {
+  padding-top: 4px;
+}
+footer .rightbox {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+footer .rightbox p {
+  font-family: Noto Sans;
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 29px;
+}
+footer .rightbox input, footer .rightbox textarea {
+  background-color: #2E2F30;
+  border-width: 0px;
+  height: 43px;
+}
+footer .rightbox input[type=text], footer .rightbox textarea[type=text] {
+  color: #ffffff;
+  text-align: left;
+}
+footer .rightbox textarea::-moz-placeholder {
+  padding-top: 16px;
+}
+footer .rightbox textarea::placeholder {
+  padding-top: 16px;
+}
+footer .rightbox .upperbox {
+  display: flex;
+  flex-direction: row;
+  gap: 75px;
+}
+footer .rightbox .upperbox .namebox, footer .rightbox .upperbox .emailbox {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 227px;
+}
+footer .rightbox .bigbox {
+  display: flex;
+  flex-direction: column;
+}
+footer .rightbox .bigbox textarea {
+  height: 234px;
+}
+footer .rightbox .contact {
+  border: 3px solid #FFCE82;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #FFCE82;
+  background: #101112;
+  padding: 12px 32px;
+  border-radius: 4px;
 }/*# sourceMappingURL=portfolio.css.map */

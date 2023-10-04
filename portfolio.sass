@@ -2,16 +2,20 @@ $base-color: #212224
 $base-color2: #101112
 $primary-color: #ffc263
 $sub-color: #FFCE82
+$textbox: #2E2F30
 html
     font-size: 16px
     font-family: Karla
     padding: 0px
     margin: 0px
 
-body
+body, h1, footer, p
     margin: 0px
     padding: 0px
-    
+
+b
+    color: $sub-color
+
 .background
         display: flex
         flex-direction: column
@@ -86,6 +90,7 @@ header
         font-size: 1.5rem
         color: $primary-color
         background: $base-color2
+        border-radius: 4px
         .introsvg
             width: 28px
             height: 28px
@@ -235,7 +240,7 @@ header
 .casePage
     height: 443px
     background-color: $base-color2
-    color: #F7C154
+    color: $sub-color
     display: flex
     align-content: center
     justify-content: center
@@ -244,8 +249,83 @@ header
         font-size: 2.25rem
         padding: 24px
         border-radius: 4px
-        border: 3px solid #F7C154
+        border: 3px solid $sub-color
         background: #101112
         width: fit-content
         margin-top: 150px
-        
+        font-family: Karla
+        font-weight: 700
+
+footer
+    color: #ffffff
+    background-color: $base-color
+    padding-top: 68px
+    padding-left: 10%
+    padding-right: 10%
+    display: flex
+    gap: 173px
+    h1 
+        font-size: 3rem
+        font-family: Noto sans
+        font-weight: 700
+        line-height: normal
+    .caption, ::placeholder
+        color: #8E8E8E
+        font-family: Karla
+        font-size: 1rem
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+    ::placeholder
+        padding-left: 16px
+    .caption2
+        padding-bottom: 18px
+    .smallbox
+        padding-top: 32px
+    .leftbox
+        p
+            padding-top: 4px
+    .rightbox
+        display: flex
+        flex-direction: column
+        gap: 34px
+        p
+            font-family: Noto Sans
+            font-size: 24px
+            font-weight: 500
+            padding-bottom: 29px
+        input, textarea
+            background-color: $textbox
+            
+            border-width: 0px
+            height: 43px
+        input[type="text"],  textarea[type = "text"]
+            color: #ffffff
+            text-align: left
+        textarea::placeholder
+            padding-top: 16px
+        .upperbox 
+            display: flex
+            flex-direction: row
+            gap: 75px
+            .namebox, .emailbox
+                display: flex
+                flex-direction: column
+                gap: 12px
+                width: 227px
+        .bigbox
+            display: flex
+            flex-direction: column
+            textarea
+                height: 234px
+        .contact
+            border: 3px solid $sub-color 
+            width: fit-content
+            font-style: normal
+            line-height: normal
+            font-weight: 700
+            font-size: 1.25rem
+            color: $sub-color
+            background: $base-color2
+            padding: 12px 32px
+            border-radius: 4px

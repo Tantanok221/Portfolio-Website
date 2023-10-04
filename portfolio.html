@@ -16,12 +16,12 @@
 </div>
 
 <header>
-    <div class="topheader">
+    <nav class="topheader">
         <div class="home">Home</div>
         <div class="experience">Experience</div>
         <div class="project">Project</div>
         <div class="contact">Contact</div>
-    </div>
+    </nav>
 
     <div class="mediumtext">
         <div class="intro">
@@ -62,7 +62,7 @@
     </div>
 </header>
 
-<div class="bodyPage">
+<main class="bodyPage">
     <object data="Asset/ExperienceLine.svg" type="" class="line"></object>
     <div class="title">Experience & Education</div>
     <div class="boxleft">
@@ -73,7 +73,7 @@
         <b>2021</b>
         Work at XXX, Company
     </div>
-</div>
+</main>
 
 <div class="projectPage">
     <div class="title">Project</div>
@@ -82,16 +82,16 @@
             I create
             <b>stunning web experience</b>
         </div>
-        <div class ="caseBox">
+        <div class="caseBox">
             <img src="Asset/projectPicture.png" alt="" class="img" />
             <div class="caseStudy">Random Lorem Ipsum Case Study</div>
-        </div>    
+        </div>
     </div>
     <div class="boxright">
-        <div class ="caseBox">
+        <div class="caseBox">
             <img src="Asset/projectPicture.png" alt="" class="img" />
             <div class="caseStudy">Random Lorem Ipsum Case Study</div>
-        </div> 
+        </div>
         <div class="text">
             I make content that
             <b>get results</b>
@@ -103,15 +103,47 @@
             <b>user focused</b>
             experience
         </div>
-        <div class ="caseBox">
+        <div class="caseBox">
             <img src="Asset/projectPicture.png" alt="" class="img" />
             <div class="caseStudy">Random Lorem Ipsum Case Study</div>
-        </div>    
+        </div>
     </div>
-</div> 
+</div>
 
 <div class="casePage">
     <div class="button">View All Case Study</div>
 </div>
 
-<footer></footer>
+<footer>
+    <div class="leftbox">
+        <h1>Contact</h1>
+        <div class="caption2 caption">I will be more than happy to answer any of your question or talk with you.</div>
+        <div class="smallbox">
+            <div class="caption">Email:</div>
+            <p>loremipsum@gmail.com</p>
+        </div>
+        <div class="smallbox">
+            <div class="caption">Phone:</div>
+            <p>+601234567890</p>
+        </div>
+    </div>
+    <form class="rightbox">
+        <p>I am always looking for great collabrators. Let's message me and make <b>something together!</b></p>
+        <div class="upperbox">
+            <div class="namebox">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name"/>
+            </div>
+            <div class="emailbox">
+                <label for="email">Your Email</label>
+                <input type="text" id="email" name="email" placeholder="Your Email" />
+            </div>
+            
+        </div>
+        <div class="bigbox">
+            <label for="message">Your Message</label>
+            <textarea type="text" id="message" name="message" placeholder="Your Message"></textarea>
+        </div>
+        <div class="contact">Contact Me</div>
+    </form>
+</footer>
