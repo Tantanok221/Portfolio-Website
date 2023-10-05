@@ -22,12 +22,7 @@ b
     top: 50px
     left: 50px
 
-.background
-        display: flex
-        flex-direction: column
-        gap: 25px
-        position: absolute
-        opacity: 0.3
+
 
 header
     background-color: $base-color
@@ -97,9 +92,13 @@ header
         color: $primary-color
         background: $base-color2
         border-radius: 4px
+        .headerRight
+            @media screen and ( max-width: 1440px  )
+                display: none
         .introsvg
             width: 28px
             height: 28px
+            
             
 
 .bodyPage 
@@ -172,7 +171,7 @@ header
     z-index: 0
     display: flex
     flex-direction: column
-    width: fit-content
+    width: 100%
     gap: 35px
     padding-top: 5px
     opacity: 0.5
@@ -279,6 +278,7 @@ header
     background-color: rgba(255, 199, 81, 0.05)
     opacity: 0.3
     z-index: 1
+    width: 100%
 footer
     color: #ffffff
     background-color: $base-color
