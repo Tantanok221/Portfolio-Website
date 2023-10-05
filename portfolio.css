@@ -21,6 +21,11 @@ b {
   left: 50px;
 }
 
+@media (max-width: 1300px) {
+  .headerRight {
+    display: none;
+  }
+}
 header {
   background-color: #212224;
   color: #FFFFFF;
@@ -93,11 +98,6 @@ header .intro4 {
   color: #ffc263;
   background: #101112;
   border-radius: 4px;
-}
-@media screen and (max-width: 1440px) {
-  header .intro4 .headerRight {
-    display: none;
-  }
 }
 header .intro4 .introsvg {
   width: 28px;
@@ -187,6 +187,20 @@ header .intro4 .introsvg {
   color: #ffffff;
   padding-top: 55px;
   gap: 80px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+@media (max-width: 1300px) {
+  .projectPage {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .projectPage .boxleft .caseBox .caseStudy {
+    transform: translateX(-50%);
+  }
+  .projectPage .boxright .caseBox .caseStudy {
+    transform: translateX(50%);
+  }
 }
 .projectPage .title {
   font-size: 2rem;
@@ -297,6 +311,7 @@ footer {
   display: flex;
   gap: 173px;
   z-index: 2;
+  padding-bottom: 100px;
 }
 footer label {
   position: relative;

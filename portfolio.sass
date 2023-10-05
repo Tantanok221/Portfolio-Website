@@ -22,7 +22,9 @@ b
     top: 50px
     left: 50px
 
-
+@media ( max-width: 1300px  )
+            .headerRight
+                display: none
 
 header
     background-color: $base-color
@@ -92,9 +94,8 @@ header
         color: $primary-color
         background: $base-color2
         border-radius: 4px
-        .headerRight
-            @media screen and ( max-width: 1440px  )
-                display: none
+        
+        
         .introsvg
             width: 28px
             height: 28px
@@ -186,7 +187,20 @@ header
     color: #ffffff
     padding-top: 55px
     gap: 80px
-
+    padding-left: 10%
+    padding-right: 10%
+    @media ( max-width: 1300px  )
+            padding-left: 5%
+            padding-right: 5%
+            .boxleft
+                .caseBox
+                    .caseStudy
+                        transform: translateX(-50%)
+            .boxright
+                .caseBox
+                    .caseStudy
+                        transform: translateX(50%)
+                
     .title
             font-size: 2rem
             font-style: normal
@@ -253,7 +267,10 @@ header
             width: 223px
             line-height: normal
             font-weight: 500
-        
+
+
+
+
 .casePage
     height: 443px
     background-color: $base-color2
@@ -288,6 +305,7 @@ footer
     display: flex
     gap: 173px
     z-index: 2
+    padding-bottom: 100px
     label
         position: relative
         z-index: 3
