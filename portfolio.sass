@@ -8,6 +8,7 @@ html
     font-family: Karla
     padding: 0px
     margin: 0px
+    scroll-behaviour: smooth
 
 body, h1, footer, p
     margin: 0px
@@ -131,6 +132,7 @@ header
     .line
         position: absolute
         padding-top: 43px
+        z-index: 1
  
         
     .boxleft
@@ -158,6 +160,17 @@ header
         background-color: $base-color2
         z-index: 2
         font-size: 1.5rem
+
+
+.wavyMiddle
+    position: absolute
+    z-index: 0
+    display: flex
+    flex-direction: column
+    width: fit-content
+    gap: 35px
+    padding-top: 5px
+    opacity: 0.5
 
 .projectPage // lack wavy pattern on background
     padding-bottom: 128px
@@ -256,6 +269,11 @@ header
         font-family: Karla
         font-weight: 700
 
+.diamond
+    position: absolute
+    background-color: rgba(255, 199, 81, 0.05)
+    opacity: 0.3
+    z-index: 1
 footer
     color: #ffffff
     background-color: $base-color
@@ -264,11 +282,17 @@ footer
     padding-right: 10%
     display: flex
     gap: 173px
+    z-index: 2
+    label
+        position: relative
+        z-index: 3
     h1 
         font-size: 3rem
         font-family: Noto sans
         font-weight: 700
         line-height: normal
+        position: relative
+        z-index: 3
     .caption, ::placeholder
         color: #8E8E8E
         font-family: Karla
@@ -276,6 +300,8 @@ footer
         font-style: normal
         font-weight: 400
         line-height: normal
+        position: relative
+        z-index: 3
     ::placeholder
         padding-left: 16px
     .caption2
@@ -283,20 +309,26 @@ footer
     .smallbox
         padding-top: 32px
     .leftbox
+        
         p
+            position: relative
+            z-index: 3
             padding-top: 4px
     .rightbox
         display: flex
         flex-direction: column
         gap: 34px
         p
+            position: relative
+            z-index: 3
             font-family: Noto Sans
             font-size: 24px
             font-weight: 500
             padding-bottom: 29px
         input, textarea
             background-color: $textbox
-            
+            position: relative
+            z-index: 3
             border-width: 0px
             height: 43px
         input[type="text"],  textarea[type = "text"]
@@ -316,6 +348,10 @@ footer
         .bigbox
             display: flex
             flex-direction: column
+            position: relative
+            z-index: 3
+            label
+                padding-bottom: 12px
             textarea
                 height: 234px
         .contact
@@ -329,3 +365,6 @@ footer
             background: $base-color2
             padding: 12px 32px
             border-radius: 4px
+            margin-bottom: 100px
+            position: relative
+            z-index: 3
